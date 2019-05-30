@@ -1,0 +1,6 @@
+
+selain luo note objektin ja lisää sen notes kokoelmaan
+selain renderöi muistiinpanot uudestaan näytölle
+selain lähettää note objektin palvelimelle new_note_spa
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+palvelin-->selain: 201 {"message":"note created"}
