@@ -1,19 +1,11 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-const Title = ({ text }) => (
-    <h1>{text}</h1>
-)
+const Title = ({ text }) => <h1>{text}</h1>
 
-const Button = ({ handleClick, text }) => (
-    <button onClick={handleClick}>{text}</button>
-)
+const Button = ({ handleClick, text }) => <button onClick={handleClick}>{text}</button>
 
-const Statistic = ({ name, value }) => {
-    return (
-        <tr><td>{name}</td><td>{value}</td></tr>
-    )
-}
+const Statistic = ({ name, value }) => <tr><td>{name}</td><td>{value}</td></tr>
 
 const Statistics = (props) => {
     const { good, neutral, bad } = props
